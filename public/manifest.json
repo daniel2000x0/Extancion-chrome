@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name":"IEATBACKGROUND",
+    "description":"Add a custom backgroud to  Google.com",
+    "version":"1.0",
+    "icons": {
+        "16":"/images/icons16.png",
+        "48": "/images/icons48.png",
+        "128":"/images/icons128.png"
+        },
+        "action":{
+            "default_popup":"/src/popup.html",
+            "default_icon":{
+                "16":"/images/icons16.png",
+                "48": "/images/icons48.png",
+                "128":"/images/icons128.png"
+            }
+        },
+        "content_scripts":[{
+            "matches":["https://www.google.com/*"],
+            "css":["main.css"]
+        }]
+       
+    
+}
